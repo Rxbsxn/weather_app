@@ -1,2 +1,7 @@
 <h1><%= @weather.name %></h1>
-<span> min temp: <%= @weather.temp_min %></span>
+<span> temperatura: <%= @weather.temp %> °C</span><br>
+<span> wilgotnosc: <%= @weather.humidity %> %</span><br>
+<span> cisnienie: <%= @weather.pressure %> hPa</span><br>
+<span> wiatr: <%= @weather.speed %> m/s</span><br>
+<span> wschod slonca: <%= @weather.sunrise.to_s(:time) %> </span><br>
+<span> zachod slonca: <%= @weather.sunset.to_s(:time) %> </span>
