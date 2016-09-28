@@ -1,16 +1,22 @@
-<form action="index">
-  City Name:<br>
-  <input type="text" name="city" value=""><br>
-  <input type="submit" value="Submit">
+<html>
+<body>
+
+
+  <form action="index">
+    <input type="text" id='city-input' class="form-control" name="city" placeholder="Enter city" aria-describedby="basic-addon2">
+  <input type="submit" id="submit-city" class="btn btn-default" value="Submit">
 </form>
 
+<div class="city-name"><%= @weather.name %></div>
+<div class="city-temp"><span> <%= @weather.temp.round %> °C</span></div><br>
+<div class="city-sun">
+<span style="margin-right: 5%;"> wschod slonca: <%= @weather.sunrise.to_s(:time) %> </span>
+<span style="margin-left: 40px;"> zachod slonca: <%= @weather.sunset.to_s(:time) %> </span>
+</div>
+<div class="city-humidity"><span> wilgotność: <%= @weather.humidity %> %</span></div>
+<div class="city-wind"<span><img src="http://image.flaticon.com/icons/svg/56/56086.svg" width="30px" height="30px"> <%= @weather.speed %> m/s</span></div>
+<div class="city-pressure"><span> ciśnienie: <%= @weather.pressure %> hPa</span></div><br>
+<br>
 
-
-
-<h1><%= @weather.name %></h1>
-<span> temperatura: <%= @weather.temp %> °C</span><br>
-<span> wilgotnosc: <%= @weather.humidity %> %</span><br>
-<span> cisnienie: <%= @weather.pressure %> hPa</span><br>
-<span> wiatr: <%= @weather.speed %> m/s</span><br>
-<span> wschod slonca: <%= @weather.sunrise.to_s(:time) %> </span><br>
-<span> zachod slonca: <%= @weather.sunset.to_s(:time) %> </span>
+</body>
+</html>

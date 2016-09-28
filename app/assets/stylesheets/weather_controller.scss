@@ -1,3 +1,67 @@
 // Place all the styles related to the weather_controller controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-image: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-438752.jpg);
+
+
+}
+
+#city-input {
+  display: block;
+  margin: auto;
+  margin-top: 2%;
+  width: 300px;
+  text-align: center;
+}
+#submit-city {
+  display: block;
+  margin: auto;
+
+}
+
+.city-name {
+
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 64px;
+  padding-top: 5%;
+  font-weight: bold;
+  text-align: center;;
+}
+
+.city-temp {
+  text-align: center;
+  font-size: 50px;
+
+}
+
+.city-humidity {
+  display: inline-block;
+  float: left;
+  margin-left: 35%;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.city-pressure {
+  margin-left: 35%;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.city-wind {
+  display: inline-block;
+  margin: auto;
+  margin-left: 10%;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0px #000000;
+}
+.city-sun {
+  text-align: center;
+  font-size: 22px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0px #000000;
+}
